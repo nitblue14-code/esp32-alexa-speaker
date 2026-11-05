@@ -1,6 +1,6 @@
 # 🔊 DIY "Alexa" smart speaker on ESP32-S3
 
-[Русская версия](README.md)
+[Русская версия](README.md) · [Українська версія](README.uk.md)
 
 A voice speaker built on a single ESP32-S3 board. Say "Alexa", ask a question, and it answers out loud. The assistant speaks Russian by default; change the prompts to switch the language. No home server is needed: everything runs on the board itself. It also plays internet radio and Spotify, keeps timers and alarms, measures temperature, humidity and pressure, and can be controlled from a web page and from Telegram.
 
