@@ -1,0 +1,11 @@
+# Разметка памяти 16 МБ: как "ESP SR 16M", но выбирается автоматически, раз файл лежит в папке скетча.
+# nvs/otadata/app0/app1 на тех же местах, что и раньше, поэтому настройки сохраняются.
+# В разделе model лежит нейросеть слова-активатора (прошивается отдельно, см. README_wakeword.txt).
+# Name,   Type, SubType, Offset,  Size, Flags
+nvs,      data, nvs,       0x9000,   0x5000,
+otadata,  data, ota,       0xe000,   0x2000,
+app0,     app,  ota_0,    0x10000, 0x300000,
+app1,     app,  ota_1,   0x310000, 0x300000,
+spiffs,   data, spiffs,  0x610000, 0x700000,
+model,    data, spiffs,  0xD10000, 0x2E0000,
+coredump, data, coredump,0xFF0000,  0x10000,

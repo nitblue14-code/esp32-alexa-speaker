@@ -1,0 +1,11 @@
+# Пароли и ключи / secrets
+secrets.h
+soloist_key.txt
+pc_bridge/soloist/
+*.exe
+
+# Сборка / build output
+build/
+*.ino.bin
+*.elf
+*.map
